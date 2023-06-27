@@ -4,13 +4,13 @@
 
 // Write a function that uses the addition operator to add two numbers together
 function add(x, y) {
-  // TODO YOUR CODE HERE
+  return x + y
 }
 
 // Further calculations are identified through cubes
 // Write a function that returns the Cubed value of x
 function cubed(x) {
-  // TODO YOUR CODE HERE
+  return x ** 3
 }
 
 
@@ -19,7 +19,7 @@ function cubed(x) {
 // Write a function that will divide two numbers, and will format the returned value
 // as a whole number. (No Decimals)
 function divideWholey(cars, teamMembers) {
-  // TODO YOUR CODE HERE
+  return Math.floor(cars / teamMembers)
 }
 
 // The sum of all numbers on a plate should be even, if its not the car is suspect
@@ -27,7 +27,10 @@ function divideWholey(cars, teamMembers) {
 // Write a function that takes in a number and determines if it is even. 
 // It should return a boolean value - true if it is even, false if it is odd.
 function isEven(num) {
-  // TODO YOUR CODE HERE
+  if (num % 2 == 0) {
+    return true
+  }
+  return false
 }
 
 // We have found the pattern used in the forgery, its a series of randomly generated numbers between two values, with this we can take the plates we have and find the one out of place plate
@@ -36,5 +39,5 @@ function isEven(num) {
 // Make it inclusive so that the starting and ending numbers are part 
 // of the range. HINT ** Utilize Javascript's Math Class (To the Google!)
 function numberGenerator(min, max) {
-  // TODO YOUR CODE HERE
+  return Math.floor(Math.random() * (max - min) + min)
 }
